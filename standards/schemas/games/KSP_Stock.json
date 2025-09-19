@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/games/KSP_Stock.json",
+  "title": "KSP_Stock",
+  "inherits": "../engines/KSP_Master.json",
+  "properties": {
+    "modules": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["ModuleEngines", "ModuleCommand", "ModuleScienceExperiment"] }
+    }
+  }
+}

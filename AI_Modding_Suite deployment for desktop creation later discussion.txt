@@ -1,0 +1,86 @@
+/AI_Modding_Suite
+│
+│── /Intake (Processing and preparing content)
+│   │── /Pending_Processing
+│   │   │── /Uploaded_Mods (Unprocessed mods from users or external sources)
+│   │   │── /Base_Game_Imports (Unaltered game files and assets)
+│   │   │── /External_Libraries (Third-party libraries awaiting integration)
+│   │   │── /Unsorted_Files (Catch-all folder for raw, uncategorized data)
+│   │── /Processed_Mods
+│   │   │── /Verified_Stable (Validated mods ready for staging)
+│   │   │── /Repaired_Mods (Mods that required and received corrections)
+│   │   │── /Incompatible_Mods (Mods flagged for further review and resolution)
+│   │── /Creation_Intake
+│   │   │── /Scanned_Content
+│   │   │   │── /Drop-Ins (Quickly added files from user collections)
+│   │   │   │── /Raw_Files (Unfiltered content directly scanned from the PC)
+│   │   │   │── /Part_Geometries
+│   │   │       │── /1D_Components (Lines, wires, paths)
+│   │   │       │── /2D_Components (Planes, polygons, surfaces)
+│   │   │       │── /3D_Components (Meshes, volumetric models)
+│   │   │       │── /Scanned_Or_Digitized (Raw scans, point clouds, or imports)
+│   │   │       │── /Metadata_Tags (Metadata extracted from files like CFGs or TXT)
+│   │   │   │── /Scripts_Config_Tags (Script-based configs pulled during scans)
+│   │   │   │── /Unknown_File_Types (Formats not yet recognized or supported)
+│   │   │── /Sorted_Content
+│   │   │   │── /To_Be_Added_To_Creation_Library (Validated for creation workflows)
+│   │   │── /Backup
+│   │   │   │── /Pre-Sorting_Backups (Original files preserved before intake)
+│   │── /Dynamic_Source_Intake (Organized by sources for modularity)
+│   │   │── /Source_[Name]
+│   │   │   │── /Pending_Processing
+│   │   │   │── /Processed_Mods
+│   │   │   │── /Scanned_Content
+│   │   │   │── /Validation_Failures (Source files flagged for issues or fixes)
+│   │── /High_Def_Backups (Dedicated to higher-definition files across sources)
+│
+│── /Deployment (Isolated deployment-ready content)
+│   │── /Repaired_Standalone_Mod_Files
+│   │   │── /Stable_Mods (Fully repaired mods ready for deployment)
+│   │   │── /Conflict_Fixed_Mods (Mods previously flagged but resolved)
+│   │   │── /Mod_Metadata (Metadata, changelogs, or descriptors for each mod)
+│   │   │── /Backup_Originals (Archived originals for reference)
+│   │── /Unified_Parts_Catalogue (UPC)
+│   │   │── /Standardized_Assets
+│   │   │   │── /Base_Parts
+│   │   │   │── /Enhanced_Assets (Optimized and metadata-rich parts)
+│   │   │── /Expanded_Assets
+│   │   │   │── /Textures
+│   │   │   │── /Models
+│   │   │   │── /Scripts
+│   │   │── /Meta_Tag_Library
+│   │   │   │── /Color_Variants
+│   │   │   │── /Performance_Tags
+│   │   │   │── /Environmental_Factors
+│   │   │── /Procedural_Assets (Assets generated dynamically by AI)
+│   │   │── /Compatibility_Patches (Cross-platform or version-specific fixes)
+│   │── /Creation_Library
+│   │   │── /Blueprints
+│   │   │   │── /Player_Designs (Manual user designs)
+│   │   │   │── /AI_Generated_Designs (Designs created autonomously by AI tools)
+│   │   │   │── /Hybrid_Collaborations (Blends of user and AI contributions)
+│   │   │── /Standardized_Parts
+│   │   │   │── /Structures
+│   │   │   │── /Propulsion_Systems
+│   │   │   │── /Electronics
+│   │   │── /Cross_Reference_Tools
+│   │   │   │── /Component_Links
+│   │   │   │   │── /Predefined_Relationships (Maps between assets and uses)
+│   │   │   │   │── /Conversion_Methods (Scripts/tools for format or scale conversion)
+│   │   │── /Deployment_Ready_Assets
+│   │   │   │── /Scenario_Files (Pre-made setups for deployment contexts)
+│   │   │   │── /Templates (Reusable designs for workflows)
+│   │   │── /Test_Bench_Designs (Controlled environment part tests in deployment)
+│   │── /Deployment_Backups
+│   │   │── /Dynamic_Source_Backups (Backups tied to dynamic source intake data)
+│
+│── /Reference_Libraries (Shared between intake and deployment)
+│   │── /Original_File_Library (Archived raw files, unchanged and preserved)
+│   │── /Repaired_File_Library (Post-repair files, ready for reference and secure)
+│   │── /UPC_Library (Unified catalog of standardized parts for use)
+│   │── /Shared_File_Formats (Universal or cross-engine formats)
+│   │── /Historical_Backups (Archives of legacy versions for rollback or reference)
+│
+│── /Staging_Areas (For controlled handoff between intake and deployment)
+│   │── /Staging_Area_For_Deployment (Files validated and ready to move to deployment)
+│   │── /Staging_Area_For_Intake (Files returned for reprocessing or updates)

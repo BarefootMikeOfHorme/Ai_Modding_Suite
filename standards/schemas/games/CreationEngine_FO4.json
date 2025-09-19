@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/games/CreationEngine_FO4.json",
+  "title": "CreationEngine_FO4",
+  "inherits": "../engines/CreationEngine_Master.json",
+  "properties": {
+    "buildZones": { "type": "array" },
+    "scrapLists": { "type": "array" },
+    "workshopKeywords": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/editors/HallOfConstructs_FO4.json",
+  "title": "HallOfConstructs_FO4",
+  "inherits": "../games/CreationEngine_FO4.json",
+  "properties": {
+    "assemblyManifest": { "type": "array" },
+    "placement": { "$ref": "../common/Placement_v1.json" },
+    "snapPoints": { "type": "array" },
+    "navmesh": { "type": "object" }
+  }
+}

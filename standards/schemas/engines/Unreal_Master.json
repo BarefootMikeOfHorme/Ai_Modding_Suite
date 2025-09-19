@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/engines/Unreal_Master.json",
+  "title": "Unreal_Master",
+  "type": "object",
+  "properties": {
+    "metadata": { "type": "object" },
+    "geometry": { "type": "object" },
+    "materials": { "type": "object" },
+    "colliders": { "type": "object" },
+    "lods": { "type": "array" },
+    "importSettings": { "type": "object" },
+    "ucxMeshes": { "type": "array" },
+    "sockets": { "type": "array" },
+    "blueprint": { "type": "object" },
+    "world": { "type": "object" },
+    "placement": { "$ref": "../common/Placement_v1.json" }
+  }
+}

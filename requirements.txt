@@ -1,0 +1,9 @@
+# Runtime dependencies
+PyQt6>=6.6,<6.8
+trimesh>=4.0,<5.0
+numpy>=1.26,<3.0
+Pillow>=10,<11
+py7zr>=0.20,<0.22
+Flask>=3.0,<4.0
+PyYAML>=6,<7
+jsonschema>=4.22,<5

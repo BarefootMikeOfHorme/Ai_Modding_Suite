@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/engines/Unity_Master.json",
+  "title": "Unity_Master",
+  "type": "object",
+  "properties": {
+    "metadata": { "type": "object" },
+    "geometry": { "type": "object" },
+    "materials": { "type": "object" },
+    "colliders": { "type": "object" },
+    "lods": { "type": "array" },
+    "importSettings": { "type": "object" },
+    "addressables": { "type": "object" },
+    "placement": { "$ref": "../common/Placement_v1.json" }
+  }
+}

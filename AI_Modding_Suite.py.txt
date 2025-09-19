@@ -1,0 +1,82 @@
+# AI Modding Suite - Debugging Version
+import sys
+import os
+import traceback
+from PyQt6.QtWidgets import (
+    QApplication, QMainWindow, QPushButton, QFileDialog,
+    QTextEdit, QLabel, QVBoxLayout, QWidget, QMessageBox
+)
+
+
+class ModdingSuite(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        print("[DEBUG] Starting AI Modding Suite...")
+        self.setWindowTitle("AI Modding Suite")
+        self.setGeometry(100, 100, 800, 600)
+
+        self.initUI()
+
+    def initUI(self):
+        print("[DEBUG] Initializing UI...")
+        layout = QVBoxLayout()
+
+        self.label = QLabel("Select a mod file or create a new one:")
+        layout.addWidget(self.label)
+
+        self.text_edit = QTextEdit()
+        layout.addWidget(self.text_edit)
+
+        self.load_button = QPushButton("Load Mod File")
+        self.load_button.clicked.connect(self.load_mod_file)
+        layout.addWidget(self.load_button)
+
+        self.save_button = QPushButton("Save Mod File")
+        self.save_button.clicked.connect(self.save_mod_file)
+        layout.addWidget(self.save_button)
+
+        self.run_button = QPushButton("Run AI Validation & Fixes")
+        self.run_button.clicked.connect(self.run_ai_validation)
+        layout.addWidget(self.run_button)
+
+        self.clear_button = QPushButton("Clear Editor")
+        self.clear_button.clicked.connect(self.clear_editor)
+        layout.addWidget(self.clear_button)
+
+        self.exit_button = QPushButton("Exit")
+        self.exit_button.clicked.connect(self.close)
+        layout.addWidget(self.exit_button)
+
+        container = QWidget()
+        container.setLayout(layout)
+        self.setCentralWidget(container)
+        print("[DEBUG] UI Loaded Successfully!")
+
+    def load_mod_file(self):
+        try:
+            print("[DEBUG] Opening file dialog...")
+            file_name, _ = QFileDialog.getOpenFileName(
+                self, "Open Mod File", "", "Config Files (*.cfg);;All Files (*)"
+            )
+
+            if file_name:
+                print(f"[DEBUG] Selected file: {file_name}")
+                if os.path.exists(file_name):
+                    with open(file_name, 'r', encoding='utf-8') as file:
+                        self.text_edit.setText(file.read())
+                    QMessageBox.information(self, "Success", f"Loaded: {file_name}")
+                else:
+                    QMessageBox.warning(self, "Error", "File not found!")
+            else:
+                print("[DEBUG] No file selected.")
+
+        except Exception as e:
+            print("[ERROR] Failed to load file:", e)
+            traceback.print_exc()
+            QMessageBox.critical(self, "Error", f"Failed to load file: {str(e)}")
+
+    def save_mod_file(self):
+        try:
+            print("[DEBUG] Saving file...")
+            file_name, _ = QFileDialog.getSaveFileName(
+      

@@ -1,0 +1,61 @@
+/AI_Modding_Suite
+│── /Intake
+│   │── /Pending_Processing
+│   │   │── /Uploaded_Mods
+│   │   │── /Base_Game_Imports
+│   │   │── /External_Libraries
+│   │   │── /Unsorted_Files
+│   │── /Processed_Mods
+│   │   │── /Verified_Stable
+│   │   │── /Repaired_Mods
+│   │   │── /Incompatible_Mods
+│   │── /Creation_Intake
+│   │   │── /Scanned_Content
+│   │   │   │── /Drop-Ins
+│   │   │   │── /Raw_Files
+│   │   │   │── /Part_Geometries
+│   │   │       │── /1D_Components
+│   │   │       │── /2D_Components
+│   │   │       │── /3D_Components
+│   │   │       │── /Scanned_Or_Digitized
+│   │   │       │── /Metadata_Tags (Metadata scans for names, CFGs, TXT files, etc.)
+│   │   │── /Sorted_Content
+│   │   │   │── /To_Be_Added_To_Creation_Library
+│   │   │── /Backup
+│   │   │   │── /Pre-Sorting_Backups (Original files preserved before intake processes)
+│   │── /High_Def_Backups (Dedicated for higher definition files across all sources)
+│── /Backup
+│   │── /Original_Files
+│   │── /Modded_Versions_Pre_Processing
+│── /Unified_Library
+│   │── /Core_Standardized_Assets
+│   │   │── /Base_Parts
+│   │   │── /Enhanced_Assets
+│   │── /Expanded_Catalogue
+│   │   │── /Textures
+│   │   │── /Models
+│   │   │── /Scripts
+│   │── /Meta_Tag_Library
+│   │   │── /Color_Variants
+│   │   │── /Performance_Tags
+│   │   │── /Environmental_Factors
+│── /Creation_Library
+│   │── /Standardized_Parts
+│   │   │── /Structures
+│   │   │── /Propulsion_Systems
+│   │   │── /Electronics
+│   │── /Cross_Reference_Tools
+│   │   │── /Component_Links
+│   │   │   │── /Predefined_Relationships
+│   │   │   │── /Conversion_Methods
+│   │── /Usage_Scenarios
+│   │   │── /Design_Templates
+│   │   │── /Scenario_Files
+│── /Blueprints
+│   │── /AI_Generated_Designs
+│   │── /Player_Custom_Designs
+│   │── /Hybrid_Collaborations
+│── /Reference_Libraries
+│   │── /Original_File_Library
+│   │── /Repaired_File_Library
+│   │── /UPC_Library

@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/common/Placement_v1.json",
+  "title": "Placement_v1",
+  "type": "object",
+  "properties": {
+    "realm": { "type": "string" },
+    "grid": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "stepMeters": { "type": "number", "minimum": 0 },
+        "angleSnapDeg": { "type": "number", "minimum": 0, "maximum": 360 }
+      },
+      "required": ["enabled"]
+    },
+    "snaps": {
+      "type": "object",
+      "properties": {
+        "surface": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "mode": { "type": "string", "enum": ["bestFitPlane", "vertex", "faceCenter", "none"] },
+            "projectAlong": { "type": "string", "enum": ["gravity", "view", "normal"] }
+          },
+          "required": ["enabled"]
+        },
+        "sockets": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "rolesAllowed": { "type": "array", "items": { "type": "string" } }
+          },
+          "required": ["enabled"]
+        },
+        "alignmentGuides": {
+          "type": "object",
+          "properties": {
+            "parallel": { "type": "boolean" },
+            "perpendicular": { "type": "boolean" },
+            "mirrorPlane": { "type": "string", "enum": ["XY", "XZ", "YZ", "None"] }
+          }
+        }
+      }
+    },
+    "overrides": {
+      "type": "object",
+      "properties": {
+        "allowInterpenetration": { "type": "boolean" },
+        "allowOffNavmesh": { "type": "boolean" },
+        "ignoreCollision": { "type": "boolean" }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "hard": { "type": "array", "items": { "type": "object" } },
+        "soft": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "navmesh": { "type": "object", "properties": { "check": { "type": "boolean" } }, "required": ["check"] },
+        "occlusion": { "type": "object", "properties": { "check": { "type": "boolean" } }, "required": ["check"] },
+        "lodCoverage": { "type": "object", "properties": { "minScreenPercentLod0": { "type": "number", "minimum": 0, "maximum": 1 } } }
+      }
+    },
+    "lineage": {
+      "type": "object",
+      "properties": {
+        "opId": { "type": "string" },
+        "user": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

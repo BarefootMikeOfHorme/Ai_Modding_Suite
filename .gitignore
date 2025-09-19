@@ -1,0 +1,32 @@
+# Python and OS junk
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyi
+*.pyz
+*.pyz.zip
+*.egg-info/
+*.log
+.pytest_cache/
+.mypy_cache/
+
+# Editors/IDEs
+.vscode/
+.idea/
+.vs/
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local data
+.env
+.env.*
+*.bak
+*.tmp

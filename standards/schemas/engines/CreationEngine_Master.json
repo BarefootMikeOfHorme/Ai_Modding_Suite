@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/engines/CreationEngine_Master.json",
+  "title": "CreationEngine_Master",
+  "type": "object",
+  "properties": {
+    "metadata": { "type": "object" },
+    "geometry": { "type": "object" },
+    "materials": { "type": "object" },
+    "colliders": { "type": "object" },
+    "lods": { "type": "array" },
+    "navmesh": { "type": "object" },
+    "buildZones": { "type": "array" },
+    "snapPoints": { "type": "array" },
+    "placement": { "$ref": "../common/Placement_v1.json" }
+  }
+}

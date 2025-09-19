@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/editors/ForgeOfForms_Unreal.json",
+  "title": "ForgeOfForms_Unreal",
+  "inherits": "../engines/Unreal_Master.json",
+  "properties": {
+    "geometry": { "type": "object" },
+    "colliders": { "type": "object" },
+    "lods": { "type": "array" },
+    "materials": { "type": "object" },
+    "importSettings": { "type": "object" },
+    "ucxMeshes": { "type": "array" },
+    "sockets": { "type": "array" }
+  }
+}

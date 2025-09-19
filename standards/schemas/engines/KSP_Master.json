@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/engines/KSP_Master.json",
+  "title": "KSP_Master",
+  "type": "object",
+  "properties": {
+    "metadata": { "type": "object" },
+    "geometry": { "type": "object" },
+    "materials": { "type": "object" },
+    "colliders": { "type": "object" },
+    "lods": { "type": "array" },
+    "nodes": { "type": "array" },
+    "bulkheadProfiles": { "type": "array" },
+    "modules": { "type": "array" },
+    "ivaAnchors": { "type": "array" },
+    "placement": { "$ref": "../common/Placement_v1.json" }
+  }
+}
